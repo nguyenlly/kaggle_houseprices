@@ -21,23 +21,34 @@ The model's performance is evaluated using the Root-Mean-Squared-Error (RMSE) be
 
 ## Getting Started
 ### Import Library and Load Dataset
-Data was imported from the Kaggle Competition into Google Colab.
-Library Used: 
-* sys
-* matplotlib
-* numpy
-* pandas
-* seaborn
-* sklearn
-
-
+- Data was imported from the Kaggle Competition into Google Colab. 
+- Libraries Used: 
+  - sys
+  - matplotlib
+  - numpy
+  - pandas
+  - seaborn
+  - sklearn
 
 ### Cleaning the Dataset
+- Removed variables with the highest amount of missing values. 
+- Handled missing values by inputting the median for the NaNs.
+- Used Label Encoder to create labels for categorical variables within the dataset.
+
 ### Exploratory Analysis
+- Explored distribution of sale prices of houses and log-transformed to normalized.
+- Looked into outliers within the dataset.
+- Correlation test and isolate the top 15 variables with the highest correlation. 
 
 ## Linear Regression Analysis
+- Conducted a Linear Regression Analysis on the training dataset.
+- Model predicted house sale prices in the testing dataset with RMSE of 0.16567.
 
 ## Polynomial Regression Analysis
+- Conducted a Polynomial Regression Analysis on the training dataset.
+- Model predicted house sale prices in the testing dataset with RMSE of 0.15201. (Improvement from Linear Regression)
 
 ## Building a Neural Network
+- Built a neural network and trained the model.
+- After several configurations to hyper-parameters, the model predicted sale prices in the testing dataset with an RMSE of 0.53099. This is an improvement over the first initial model with an RMSE of 2.10037.
 
